@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="InvalidUsernameInvalidPassword(failed)">
+    <parameter name="password1" value="tutorial123"/>
+    <parameter name="username1" value="tutorial123"/>
+    <classes>
+      <class name="com.pom_with_pageFactory_MercuryTours.Scripts.LoginTest_xml">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="VerifyUsernamePasswordLogin" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.pom_with_pageFactory_MercuryTours.Scripts.LoginTest_xml -->
+    </classes>
+  </test> <!-- InvalidUsernameInvalidPassword(failed) -->
+  <test thread-count="5" name="ValidUsernameInvalidPassword(failed)">
+    <parameter name="password1" value="tutorial123"/>
+    <parameter name="username1" value="tutorial"/>
+    <classes>
+      <class name="com.pom_with_pageFactory_MercuryTours.Scripts.LoginTest_xml">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="VerifyUsernamePasswordLogin" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.pom_with_pageFactory_MercuryTours.Scripts.LoginTest_xml -->
+    </classes>
+  </test> <!-- ValidUsernameInvalidPassword(failed) -->
+  <test thread-count="5" name="InvalidUsernameValidPassword(failed)">
+    <parameter name="password1" value="tutorial"/>
+    <parameter name="username1" value="tutorial123"/>
+    <classes>
+      <class name="com.pom_with_pageFactory_MercuryTours.Scripts.LoginTest_xml">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="VerifyUsernamePasswordLogin" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.pom_with_pageFactory_MercuryTours.Scripts.LoginTest_xml -->
+    </classes>
+  </test> <!-- InvalidUsernameValidPassword(failed) -->
+  <test thread-count="5" name="RegisterTest(failed)">
+    <classes>
+      <class name="com.pom_with_pageFactory_MercuryTours.Scripts.RegisterTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="VerifyUsernamePasswordLogin" invocation-numbers="0 1 2"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.pom_with_pageFactory_MercuryTours.Scripts.RegisterTest -->
+    </classes>
+  </test> <!-- RegisterTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
